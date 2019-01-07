@@ -1,2 +1,2 @@
 # algorithms
-Studying and implementation on most popular algorithns 
+Studying and implementation of most popular algorithms
