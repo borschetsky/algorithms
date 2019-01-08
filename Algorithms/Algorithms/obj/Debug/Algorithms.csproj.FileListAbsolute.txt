@@ -1,0 +1,7 @@
+D:\VISUALSTUDIO\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+D:\VISUALSTUDIO\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+D:\VISUALSTUDIO\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+D:\VISUALSTUDIO\Algorithms\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\VISUALSTUDIO\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\VISUALSTUDIO\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+D:\VISUALSTUDIO\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
