@@ -24,7 +24,10 @@ namespace Algorithms
             //Orinting result
             //array = Sorting.QuickSort(array).ToArray();
             array = Sorting.MergeSort(array).ToArray();
-            PrintCollection(array.ToArray());
+            
+            var result = Searching.BinarySearch(11, array);
+            Console.WriteLine(result);
+            //PrintCollection(array.ToArray());
             //TEST
 
 
