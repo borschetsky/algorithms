@@ -25,6 +25,7 @@ namespace Algorithms
             //array = Sorting.QuickSort(array).ToArray();
             array = Sorting.MergeSort(array).ToArray();
             PrintCollection(array.ToArray());
+            //TEST
 
 
 
