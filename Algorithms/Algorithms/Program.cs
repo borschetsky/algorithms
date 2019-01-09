@@ -24,19 +24,20 @@ namespace Algorithms
             //Orinting result
             //array = Sorting.QuickSort(array).ToArray();
             array = Sorting.MergeSort(array).ToArray();
-            
-            var result = Searching.BinarySearch(11, array);
-            Console.WriteLine(result);
-            //PrintCollection(array.ToArray());
+
+            //var result = Searching.BinarySearch(11, array);
+            //Console.WriteLine(result);
+            PrintCollection(array);
+            Console.WriteLine(Searching.BinarySearch(1, array, 0, array.Length - 1));
             //TEST
 
 
 
         }
 
-        private static void PrintCollection(int[] collection)
+        private static void PrintCollection<T>(IList<T> collection) 
         {
-            Console.WriteLine(string.Join(", ", collection));
+            Console.WriteLine(string.Join(", ", collection.ToArray()));
         }
     }
 }

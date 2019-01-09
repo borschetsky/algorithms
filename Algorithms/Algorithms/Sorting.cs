@@ -117,7 +117,7 @@ namespace Algorithms
 
         }
 
-        private static IList<T> Merge<T>(IList<T> left, IList<T> right) where T : IComparable
+        private static IList<T> Merge<T>(IList<T> left, IList<T> right) where T :  IComparable
         {
             int i = 0;
             int j = 0;
