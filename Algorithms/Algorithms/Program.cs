@@ -23,12 +23,12 @@ namespace Algorithms
             //Sorting.SelectionSortBySwap(array);
             //Orinting result
             //array = Sorting.QuickSort(array).ToArray();
-            array = Sorting.MergeSort(array).ToArray();
-
+            //array = Sorting.MergeSort(array).ToArray();
+            Sorting.BubbleSort(array);
             //var result = Searching.BinarySearch(11, array);
             //Console.WriteLine(result);
             PrintCollection(array);
-            Console.WriteLine(Searching.BinarySearch(1, array, 0, array.Length - 1));
+            //Console.WriteLine(Searching.BinarySearch(1, array, 0, array.Length - 1));
             //TEST
 
 

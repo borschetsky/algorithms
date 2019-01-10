@@ -9,6 +9,23 @@ namespace Algorithms
 {
     public static class Sorting
     {
+        public static void BubbleSort<T>(IList<T> arr) where T : IComparable
+        {
+            bool IsSwaped = false;
+            while (!IsSwaped)
+            {
+                IsSwaped = true;
+                for (int i = 0; i < arr.Count - 1; i++)
+                {
+                    if (arr[i].CompareTo(arr[i + 1]) == 1)
+                    {
+                        Swap(arr, i, i + 1);
+                        IsSwaped = false;
+                    }
+                }
+            }
+        }
+
         public static void InsertionSortByShifting<T>(IList<T> collection) where T : IComparable
         {
             for (int i = 1; i < collection.Count; i++)
