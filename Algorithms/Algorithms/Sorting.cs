@@ -110,7 +110,7 @@ namespace Algorithms
 
         }
 
-        private static void Swap<T>(IList<T> array, int a, int b) where T : IComparable
+        public static void Swap<T>(IList<T> array, int a, int b) where T : IComparable
         {
             var temp = array[a];
             array[a] = array[b];
@@ -134,7 +134,7 @@ namespace Algorithms
 
         }
 
-        private static IList<T> Merge<T>(IList<T> left, IList<T> right) where T :  IComparable
+        public static IList<T> Merge<T>(IList<T> left, IList<T> right) where T :  IComparable
         {
             int i = 0;
             int j = 0;
@@ -166,6 +166,38 @@ namespace Algorithms
 
             return result;
 
+
+        }
+
+        public static void QuickSortClassic(int[]collection, int startIndex, int endIndex)
+        {
+            if (startIndex >= endIndex)
+            {
+                return;
+            }
+            int pivotIndex = Partition(collection, startIndex, endIndex);
+
+            QuickSortClassic(collection, startIndex, pivotIndex - 1);
+            QuickSortClassic(collection, pivotIndex + 1, endIndex);
+
+        }
+
+        public static int Partition(int[] collection, int startIndex, int endIndex)
+        {
+            int pivotIndex = startIndex;
+            int pivotValue = collection[endIndex];
+
+            for (int i = startIndex; i < endIndex; i++)
+            {
+                if (collection[i] <= pivotValue)
+                {
+                    Swap(collection, i, pivotIndex);
+                    pivotIndex++;
+                }
+            }
+            Swap(collection, pivotIndex, endIndex);
+
+            return pivotIndex;
 
         }
     }

@@ -16,7 +16,7 @@ namespace Algorithms
             //int[] array = new int[] { 2, 1 };
 
             //creating of dynamic array and adding values from classic arr
-            List<int> arr = new List<int>(array);
+            //List<int> arr = new List<int>(array);
             //Testin Insertion Sort method with collections from type IList<T> where T : IComparable
             //Sorting.InsertionSortByShifting(arr);
             //Sorting.InsertionSortBySwapping(array);
@@ -24,7 +24,8 @@ namespace Algorithms
             //Orinting result
             //array = Sorting.QuickSort(array).ToArray();
             //array = Sorting.MergeSort(array).ToArray();
-            Sorting.BubbleSort(array);
+            //Sorting.BubbleSort(array);
+            Sorting.QuickSortClassic(array, 0, array.Length - 1);
             //var result = Searching.BinarySearch(11, array);
             //Console.WriteLine(result);
             PrintCollection(array);
