@@ -169,7 +169,7 @@ namespace Algorithms
 
         }
 
-        public static void QuickSortClassic(int[]collection, int startIndex, int endIndex)
+        public static void QuickSortClassic<T>(IList<T> collection, int startIndex, int endIndex) where T : IComparable
         {
             if (startIndex >= endIndex)
             {
@@ -182,14 +182,14 @@ namespace Algorithms
 
         }
 
-        public static int Partition(int[] collection, int startIndex, int endIndex)
+        public static int Partition<T>(IList<T> collection, int startIndex, int endIndex) where T : IComparable
         {
             int pivotIndex = startIndex;
-            int pivotValue = collection[endIndex];
+            var pivotValue = collection[endIndex];
 
             for (int i = startIndex; i < endIndex; i++)
             {
-                if (collection[i] <= pivotValue)
+                if (collection[i].CompareTo(pivotValue) == -1 || collection[i].CompareTo(pivotValue) == 0)
                 {
                     Swap(collection, i, pivotIndex);
                     pivotIndex++;
